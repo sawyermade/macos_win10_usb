@@ -1,6 +1,8 @@
 # Create Windows 10 Bootable USB on macOS Apple Silicon M1
 This is how to make a bootable NTFS usb drive for Windows 10
 
+CREDIT FOR UEFI BOOT: [Rufus Team](https://github.com/pbatard/rufus)
+
 ## Enable Kernel Extensions
 You want to enable: Allow user management of kernel extensions from identified developers: Allow installation of software that uses legacy kernel extensions.
 
@@ -114,5 +116,3 @@ diskutil umount /Volumes/UEFI_NTFS
 
 ## Load USB on computer
 Once ejected/unmounted from mac and placed into your computer, you load the UEFI boot menu for your motherboard/computer and select your USB drive Partition 3 and it should boot. There will be two UEFI partitions on the USB but the first one will not work.
-
-CREDIT FOR UEFI BOOT: [Rufus Team](https://github.com/pbatard/rufus)
