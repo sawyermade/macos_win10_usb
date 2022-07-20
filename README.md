@@ -85,10 +85,14 @@ Run these commands in the terminal opened above. Replace disk4 with disk number 
 diskutil unmount /dev/disk4s2
 mkntfs -f -L win10_install /dev/disk4s2
 diskutil eraseVolume free free disk4s1
+```
+
+Run diskutil list to verify changes:
+```
 diskutil list
 ```
 
-After run, diskutil list, example:
+Example output with disk being disk4, removes above EFI partition:
 ```
 /dev/disk4 (external, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
