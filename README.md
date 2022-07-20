@@ -115,4 +115,4 @@ diskutil umount /Volumes/UEFI_NTFS
 ```
 
 ## Load USB on computer
-Once ejected/unmounted from mac and placed into your computer, you load the UEFI boot menu for your motherboard/computer and select your USB drive Partition 3 and it should boot. There will be two UEFI partitions on the USB but the first one will not work.
+Once ejected/unmounted from mac and placed into your computer, you load the UEFI boot menu for your motherboard/computer and select your USB drive Partition 3 and it should boot. There will be two UEFI partitions on the USB (Partition 1 and 3) but 1 probably will not work. Its a little ghetto, but works and contributions are welcome.
