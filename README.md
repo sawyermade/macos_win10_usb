@@ -84,6 +84,7 @@ Run these commands in the terminal opened above. Replace disk4 with disk number 
 ```
 diskutil unmount /dev/disk4s2
 mkntfs -f -L win10_install /dev/disk4s2
+diskutil eraseVolume free free disk4s1
 ```
 
 ### Mount NTFS
@@ -115,4 +116,4 @@ diskutil umount /Volumes/UEFI_NTFS
 ```
 
 ## Load USB on computer
-Once ejected/unmounted from mac and placed into your computer, you load the UEFI boot menu for your motherboard/computer and select your USB drive Partition 3 and it should boot. There will be two UEFI partitions on the USB (Partition 1 and 3) but 1 probably will not work. Its a little ghetto, but works and contributions are welcome.
+Once ejected/unmounted from mac and placed into your computer, you load the UEFI boot menu for your motherboard/computer and select your USB drive Partition 2 and it should boot. Its a little ghetto, but works and contributions are welcome.
