@@ -115,4 +115,4 @@ diskutil umount /Volumes/UEFI_NTFS
 ## Load USB on computer
 Once ejected/unmounted you load the UEFI boot menu for your motherboard/computer and select your USB drive Partition 3 and it should boot. There will be two UEFI partitions on the USB but the first one will not work.
 
-CREDIT FOR UEFI: [Rufus Team](https://github.com/pbatard/rufus)
+CREDIT FOR UEFI BOOT: [Rufus Team](https://github.com/pbatard/rufus)
