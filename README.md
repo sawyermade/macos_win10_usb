@@ -3,7 +3,7 @@ This is how to make a bootable NTFS usb drive for Windows 10
 
 CREDIT FOR UEFI BOOT: [Rufus Team](https://github.com/pbatard/rufus)
 
-## Enable Kernel Extensions
+## Enable Kernel Extensions so ntfs-3g will work
 You want to enable: Allow user management of kernel extensions from identified developers: Allow installation of software that uses legacy kernel extensions.
 
 [Apple Support Link](https://support.apple.com/guide/mac-help/macos-recovery-a-mac-apple-silicon-mchl82829c17/mac)
