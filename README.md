@@ -22,8 +22,9 @@ Run in the terminal
 
 ## Install ntfs-3g & macfuse via brew
 Run the following commands in the terminal and reboot to be safe that the extensions are loaded.
+
+Run in terminal
 ```
-# Run in terminal
 brew tap gromgit/homebrew-fuse
 brew install --cask macfuse
 brew install ntfs-3g-mac
