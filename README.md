@@ -10,7 +10,7 @@ You want to enable: Allow user management of kernel extensions from identified d
 
 OR
 
-[Check out this video from Paragon except cmd+R doesnt work on M1](https://www.youtube.com/watch?v=0EXmDmHm6eg)
+[Check out this video from Paragon except cmd+R doesnt work on M1, have to hold power button](https://www.youtube.com/watch?v=0EXmDmHm6eg)
 
 ## Install brew
 [Brew Installation Link](https://brew.sh)
