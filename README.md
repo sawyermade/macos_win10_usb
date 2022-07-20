@@ -92,7 +92,7 @@ sudo mkdir /Volumes/ntfs
 sudo mount -t ntfs -o rw,auto,nobrowse /dev/disk4s2 /Volumes/ntfs
 ```
 
-## Copy Rufus UEFI Stuff
+## Copy [Rufus](https://github.com/pbatard/rufus) UEFI Stuff
 From within the macos_win10_usb directory
 ```
 cp -r UEFI_NTFS/* /Volumes/UEFI_NTFS
