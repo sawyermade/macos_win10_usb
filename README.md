@@ -87,6 +87,16 @@ mkntfs -f -L win10_install /dev/disk4s2
 diskutil eraseVolume free free disk4s1
 ```
 
+After run diskutil example:
+```
+/dev/disk4 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *32.1 GB    disk4
+   1:       Microsoft Basic Data win10_install           14.0 GB    disk4s1
+   2:       Microsoft Basic Data UEFI_NTFS               99.6 MB    disk4s2
+                    (free space)                         17.8 GB    -
+```
+
 ### Mount NTFS
 ```
 sudo mkdir /Volumes/ntfs
