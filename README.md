@@ -31,6 +31,7 @@ brew tap gromgit/homebrew-fuse
 brew install --cask macfuse
 brew install ntfs-3g-mac
 ```
+Restart the Mac to be sure it will work correctly.
 
 ## Partition USB drive & Format/Mount NTFS
 ### Clone repo and enter directory
