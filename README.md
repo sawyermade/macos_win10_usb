@@ -64,7 +64,7 @@ For this example, we will be using disk4 which was found from the step above. Re
 diskutil partitionDisk /dev/disk4 3 GPT FAT32 WIN 14GB FAT32 UEFI_NTFS 100M "Free Space" "Free Space" 0
 ```
 
-Now list disks again:
+Now list disks again to see changes:
 ```
 diskutil list
 ```
