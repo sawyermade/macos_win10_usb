@@ -128,7 +128,7 @@ cp -rv /Volumes/win_10_pro_x64_vl/* /Volumes/ntfs/
 ## Unmount USB disks
 ```
 sudo umount /Volumes/ntfs
-diskutil umount /Volumes/UEFI_NTFS
+diskutil unmount /Volumes/UEFI_NTFS
 ```
 
 ## Load USB on computer
