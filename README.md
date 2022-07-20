@@ -22,7 +22,7 @@ Run in the terminal:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## Install ntfs-3g & macfuse via brew
+## Install ntfs-3g & macfuse via brew then restart
 Run the following commands in the terminal and reboot to be safe that the extensions are loaded.
 
 Run in terminal:
