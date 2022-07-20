@@ -119,7 +119,7 @@ Double click the ISO file and it will automatically mount it. Depending on ISO n
 
 In my case, name is win_10_pro_x64_vl and mounted at /Volumes/win_10_pro_x64_vl
 
-This will take a while, so using verbose so you can see progress:
+This will take a while (5-10 min), so using verbose so you can see progress:
 ```
 cp -rv /Volumes/win_10_pro_x64_vl/* /Volumes/ntfs/
 ```
