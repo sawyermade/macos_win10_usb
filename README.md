@@ -15,8 +15,8 @@ OR
 
 OR
 
+Run in the terminal
 ```
-# Run in the terminal
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
