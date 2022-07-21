@@ -45,8 +45,10 @@ cp -r ${isomount}/* /Volumes/WIN10/
 if [ $DEBUG == true ]; then ls /Volumes/WIN10/; fi;
 
 # Complete
+echo -e "\nWindows 10 bootable ExFAT USB creation complete!\n"
+
+# Unmount
 diskutil unmount "/Volumes/UEFI_NTFS/"
 diskutil unmount "/Volumes/WIN10/"
 diskutil unmount "$isomount"
-echo -e "\nWindows 10 bootable ExFAT USB creation complete!\n"
-echo -e "USB has successfully ejected/unmounted and is safe to remove.\n"
+echo -e "\nUSB has successfully ejected/unmounted and is safe to remove.\n"

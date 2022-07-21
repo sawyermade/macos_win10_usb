@@ -99,11 +99,12 @@ Finished erase on disk4
 UEFI files copied successfully.
 
 Copying Windows 10 files from ISO to USB. This will take 5-10 minutes...
+
+Windows 10 bootable ExFAT USB creation complete!
+
 Volume UEFI_NTFS on disk4s3 unmounted
 Volume WIN10 on disk4s2 unmounted
 Volume win_10_pro_x64_vl on disk5 unmounted
-
-Windows 10 bootable ExFAT USB creation complete!
 
 USB has successfully ejected/unmounted and is safe to remove.
 ```
