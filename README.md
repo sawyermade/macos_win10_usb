@@ -19,7 +19,7 @@ chmod +x win10_usb_create.sh
 
 ### Example input and output from terminal
 ```
-~/GIT/macos_win10_usb (master*) » ./win10_usb_create.sh                                                                    smc@Daniels-Mini
+~/GIT/macos_win10_usb (master*) » ./win10_usb_create.sh
 /dev/disk0 (internal):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      GUID_partition_scheme                         251.0 GB   disk0
