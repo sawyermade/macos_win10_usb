@@ -110,6 +110,7 @@ USB has successfully ejected/unmounted and is safe to remove.
 ```
 
 
+# ADVANCED AND NOT RECOMMENDED! USE ABOVE ExFAT METHOD!
 # Create NTFS Windows 10 Bootable USB on macOS Monterey Apple Silicon M1 / M2
 This is how to make a bootable NTFS usb drive for Windows 10
 
