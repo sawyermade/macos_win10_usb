@@ -29,7 +29,7 @@ echo
 
 # Partition USB
 if [ "$isosizep2" -gt "$usbsize" ]; then echo -e "\nUSB not large enough for ISO\n"; exit; fi;
-diskutil partitionDisk /dev/disk4 3 GPT ExFAT WIN10 ${isosizep1}GB FAT32 UEFI_NTFS 100M "Free Space" "Free Space" 0
+diskutil partitionDisk /dev/disk${disknum} 3 GPT ExFAT WIN10 ${isosizep1}GB FAT32 UEFI_NTFS 100M "Free Space" "Free Space" 0
 diskutil eraseVolume free free disk${disknum}s1
 if [ $DEBUG == true ]; then diskutil list; fi;
 
