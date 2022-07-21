@@ -1,5 +1,5 @@
 # Create ExFAT Windows 10 Bootable USB on macOS Monterey Apple Silicon M1 / M2
-This is how to make a bootable ExFAT USB drive for Windows 10. Took about 6 minutes on Mac Mini M1 / M2.
+This is how to make a bootable ExFAT USB drive for Windows 10. Took about 6 minutes on Mac Mini M1.
 
 CREDIT FOR UEFI BOOT: [Rufus Team](https://github.com/pbatard/rufus)
 
@@ -110,7 +110,7 @@ USB has successfully ejected/unmounted and is safe to remove.
 ```
 
 
-# Create NTFS Windows 10 Bootable USB on macOS Monterey Apple Silicon M1
+# Create NTFS Windows 10 Bootable USB on macOS Monterey Apple Silicon M1 / M2
 This is how to make a bootable NTFS usb drive for Windows 10
 
 CREDIT FOR UEFI BOOT: [Rufus Team](https://github.com/pbatard/rufus)
