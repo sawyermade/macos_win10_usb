@@ -28,7 +28,7 @@ if [ $DEBUG == true ]; then echo $isosize; fi;
 echo
 
 # Partition USB
-if [ "$isosizep2" -gt "$usbsize" ]; then echo -e "\nUSB not large enough for ISO\n"; exit; fi;
+if [ "$isosizep2" -gt "$usbsize" ]; then echo -e "\nUSB not large enough for ISO\n"; diskutil unmount "$isomount"; exit; fi;
 diskutil partitionDisk /dev/disk${disknum} 3 GPT ExFAT WIN10 ${isosizep1}GB FAT32 UEFI_NTFS 100M "Free Space" "Free Space" 0
 diskutil eraseVolume free free disk${disknum}s1
 if [ $DEBUG == true ]; then diskutil list; fi;
@@ -41,7 +41,6 @@ if [ $DEBUG == true ]; then ls /Volumes/UEFI_NTFS/; fi;
 # Copy windows 10 files to USB
 echo -e "\nCopying Windows 10 files from ISO to USB. This will take 5-10 minutes..."
 cp -r ${isomount}/* /Volumes/WIN10/
-# cp -rv ${isomount}/* /Volumes/WIN10/
 if [ $DEBUG == true ]; then ls /Volumes/WIN10/; fi;
 
 # Complete
