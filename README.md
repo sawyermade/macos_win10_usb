@@ -1,5 +1,5 @@
 # Create ExFAT Windows 10 Bootable USB on macOS Monterey Apple Silicon M1
-This is how to make a bootable NTFS usb drive for Windows 10
+This is how to make a bootable ExFAT USB drive for Windows 10
 
 ## Clone repo and enter directory
 Open terminal and run the following commands:
