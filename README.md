@@ -5,6 +5,7 @@ CREDIT FOR UEFI:NTFS BOOT, WITH PERMISSION LOL: [Rufus Team](https://github.com/
 
 ## Clone repo and enter directory
 Open terminal and run the following commands:
+
 ```
 git clone https://github.com/sawyermade/macos_win10_usb.git
 cd macos_win10_usb
@@ -12,6 +13,7 @@ cd macos_win10_usb
 
 ## Run bash script
 Make sure to pick the correct disk number and USB size in GB
+
 ```
 chmod +x win10_usb_create.sh
 ./win10_usb_create.sh
@@ -131,6 +133,7 @@ OR
 OR
 
 Run in the terminal:
+
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
@@ -139,6 +142,7 @@ Run in the terminal:
 Run the following commands in the terminal and reboot to be safe that the extensions are loaded.
 
 Run in terminal:
+
 ```
 brew tap gromgit/homebrew-fuse
 brew install --cask macfuse
@@ -149,6 +153,7 @@ Restart the Mac to be sure it will work correctly.
 ## Partition USB drive & Format/Mount NTFS
 ### Clone repo and enter directory
 Open terminal and run the following commands:
+
 ```
 git clone https://github.com/sawyermade/macos_win10_usb.git
 cd macos_win10_usb
@@ -157,11 +162,13 @@ cd macos_win10_usb
 Insert USB drive and run the following commands in the terminal opened above.
 ### List disk and get /dev disk number
 List disk and find your usb drive. It will be an (external, physical) and look for name that is mounted on Desktop
+
 ``` 
 diskutil list
 ```
 
 Example: On Desktop name is "Windows"
+
 ```
 /dev/disk4 (external, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
@@ -173,16 +180,19 @@ Example: On Desktop name is "Windows"
 Make sure USB drive is at least 16GB or choose different parition sizes (advanced).
 
 For this example, we will be using disk4 which was found from the step above. Replace disk4 with your disk number.
+
 ```
 diskutil partitionDisk /dev/disk4 3 GPT FAT32 WIN 14GB FAT32 UEFI_NTFS 100M "Free Space" "Free Space" 0
 ```
 
 Now list disks again to see changes:
+
 ```
 diskutil list
 ```
 
 Example: disk4 example found above using 32GB USB
+
 ```
 /dev/disk4 (external, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
@@ -195,6 +205,7 @@ Example: disk4 example found above using 32GB USB
 
 ### Format WIN partition as NTFS instead of FAT32
 Run these commands in the terminal opened above. Replace disk4 with disk number found above.
+
 ```
 diskutil unmount /dev/disk4s2
 mkntfs -f -L win10_install /dev/disk4s2
@@ -202,11 +213,13 @@ diskutil eraseVolume free free disk4s1
 ```
 
 Run diskutil list to verify changes:
+
 ```
 diskutil list
 ```
 
 Example output with disk being disk4, removes above EFI partition:
+
 ```
 /dev/disk4 (external, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
@@ -224,6 +237,7 @@ sudo mount -t ntfs -o rw,auto,nobrowse /dev/disk4s2 /Volumes/ntfs
 
 ## Copy [Rufus](https://github.com/pbatard/rufus) UEFI Files
 From within the macos_win10_usb directory
+
 ```
 cp -r UEFI_NTFS/* /Volumes/UEFI_NTFS
 ```
@@ -234,6 +248,7 @@ Double click the ISO file and it will automatically mount it. Depending on ISO n
 In my case, name is win_10_pro_x64_vl and mounted at /Volumes/win_10_pro_x64_vl
 
 This will take a while (5-10 min), so using verbose so you can see progress:
+
 ```
 cp -rv /Volumes/win_10_pro_x64_vl/* /Volumes/ntfs/
 ```
